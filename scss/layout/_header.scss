@@ -1,0 +1,14 @@
+@use "../utilities/variables" as *;
+header {
+  margin-bottom: 2rem;
+
+  .headerh1 {
+    font-family: $font-principal;
+    color: $color-header-title;
+    font-size: 50px;
+  }
+
+  .imagentripandart {
+    width: 5rem;
+  }
+}

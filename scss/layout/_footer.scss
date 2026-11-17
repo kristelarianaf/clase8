@@ -1,0 +1,7 @@
+
+.footer, footer {
+  position: static;
+  width: 100%;
+  margin-top: auto; // Clave: se ancla al fondo si hay poco contenido
+  flex-shrink: 0;   // Evita que el footer se aplaste en pantallas chicas
+}

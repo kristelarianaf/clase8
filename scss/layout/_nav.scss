@@ -1,0 +1,36 @@
+@use "../utilities/variables" as *;
+.navbar {
+  margin-bottom: 2rem;
+}
+
+.menunavegacion {
+  list-style: none;
+  text-decoration: none;
+}
+
+.mi-navbar {
+  background-color: $color-nav-bg;
+  color: $color-nav-text;
+
+  .nav-link,
+  .navbar-brand {
+    color: $color-brand;
+  }
+
+  .nav-link {
+    &:hover {
+      color: $color-accent-hover;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 2px $color-accent-hover;
+      color: $color-accent-hover;
+    }
+
+    &:active {
+      color: $color-accent-active;
+      transform: scale(0.96);
+    }
+  }
+}

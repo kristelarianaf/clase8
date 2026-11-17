@@ -1,0 +1,17 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+.btn-purple {
+  background-color: $color-btn-purple-bg;
+  color: $color-brand;
+  border: 1px solid $color-btn-purple-border;
+
+  &:hover {
+    background-color: $color-btn-purple-hover;
+    border-color: $color-btn-purple-border-hover;
+    color: $color-brand;
+  }
+}
+.btn-purple {
+  // Pasamos los parámetros: color de fondo y color de texto
+  @include boton-destacado(#7b2cbf, #ffffff, 2px solid #9d4edd);
+}

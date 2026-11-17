@@ -1,0 +1,144 @@
+/* regla universal del padding y el margin */ 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*importacion de la fuente Arimo*/
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/*BACKGROUND*/
+body {
+    background-color: #a36fd4;
+}
+/*HEADER*/
+.headerh1{
+font-family: "Arimo", sans-serif;
+color: #0a0113;
+font-size: 50px;
+}
+.imagentripandart {
+    width: 5rem;
+}
+/* LISTA DE MENU */
+.menunavegacion {
+    list-style: none;
+    text-decoration: none;
+
+}
+/*MAIN*/
+h1 {
+    font-family: "Arimo", sans-serif;
+    font-size: 32px;
+    color: #383733;
+}
+h2 {
+    font-family: "Arimo", sans-serif;
+    font-size: 24px;
+    color: indigo;
+}
+p {
+    font-family: "Arimo", sans-serif;
+    font-size: 15px;
+    color: #000000;
+}
+a {
+    text-decoration: none;
+}
+ .mi-navbar {
+    background-color: #3c2353;
+    color: #ede3d4;
+ }
+.mi-navbar .nav-link,
+.mi-navbar .navbar-brand {
+  color: #ffffff;
+}
+
+.mi-navbar .nav-link:hover {
+  color: #f1c40f;
+}
+.mi-navbar .nav-link:focus {
+  outline: none; /* Quitamos el borde por defecto del navegador */
+  box-shadow: 0 0 0 2px #f1c40f; /* Anillo visible accesible */
+  color: #f1c40f;
+}
+.mi-navbar .nav-link:active {
+  color: #e67e22;
+  transform: scale(0.96); /* Leve efecto de pulsado */
+}
+
+.indexcard {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+}
+.indexcard article {
+    border: solid 1px #000000;
+    border-radius: 15px;
+    padding: 30px;
+    margin: 30px;
+}
+.cardindex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+}
+.cardindex article {
+    border: solid 1px #000000;
+    border-radius: 15px;
+    padding: 30px;
+    margin: 30px;
+}
+
+@media only screen and (min-width: 1024px){
+
+        .cardindex {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 20px;
+}
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr auto;
+    gap: 10px;
+    width: 80%;
+    grid-template-areas: 
+        "navbar"
+        "main"
+        "footer";
+}
+#carouselExample .carousel-item img {
+  max-height: 650px;
+  object-fit: cover; /* Evita que las imágenes se deformen */
+}
+header, 
+.navbar {
+  margin-bottom: 2rem; /* Ajustá el valor a gusto */
+}
+/* Altura fija para el contenedor del carrusel */
+.carousel-inner {
+  height: 120VH; /* Podés ajustar la altura que prefieras (ej: 400px, 500px, 60vh) */
+}
+/* Forzar a que las imágenes ocupen todo el contenedor sin deformarse */
+.carousel-item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover; /* Recorta los bordes sobrantes manteniendo la proporción */
+  object-position: center; /* Centra el encuadre de la foto */
+}
+/* Botón con fondo púrpura relleno */
+.btn-purple {
+  background-color: #321c59;
+  color: #ffffff;
+  border: 1px solid #6f42c1;
+}
+.btn-purple:hover {
+  background-color: #160c2a;
+  border-color: #21113d;
+  color: #ffffff;
+}
+

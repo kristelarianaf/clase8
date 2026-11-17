@@ -1,0 +1,42 @@
+@use "../utilities/variables" as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+h1 {
+  font-family: $font-principal;
+  font-size: 32px;
+  color: $color-text-dark;
+  animation: fadeInDown; /* Nombre de la animación de Animate.css */
+  animation-duration: 1.2s; /* Duración */
+  animation-timing-function: ease-out;
+}
+p {
+  font-family: $font-principal;
+  font-size: 15px;
+  color: $color-text-body;
+}
+
+a {
+  text-decoration: none;
+}
+// 1. Placeholder base para títulos destacados
+%titulo-destacado-base {
+  color: #e0aaff;
+  font-family: inherit;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-left: 4px solid #7b2cbf;
+  padding-left: 0.8rem;
+  margin-bottom: 1rem;
+}
+// 2. Extendemos a los títulos de la página
+h2 {
+  @extend %titulo-destacado-base;
+  font-size: 1.8rem;
+}
+h3 {
+  @extend %titulo-destacado-base;
+  font-size: 1.4rem;
+  border-left-color: #9d4edd; // Variante sutil en el color del borde
+}

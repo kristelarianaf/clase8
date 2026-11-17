@@ -1,0 +1,35 @@
+@use "../utilities/variables" as *;
+@use "sass:color";
+@mixin flex-custom($direction: row, $justify: flex-start, $gap: 0) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  gap: $gap;
+}
+@mixin card-box {
+  border: solid 1px $color-text-body;
+  border-radius: 15px;
+  padding: 30px;
+  margin: 30px;
+}
+
+@mixin boton-destacado($bg-color, $color-texto: #ffffff, $borde: 2px solid transparent) {
+  background-color: $bg-color;
+  color: $color-texto;
+  border: $borde;
+  border-radius: 50px;
+  padding: 0.6rem 1.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  &:hover {
+    // Reemplazo moderno de darken($bg-color, 12%)
+    background-color: color.adjust($bg-color, $lightness: -12%);
+    color: $color-texto;
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+  }
+}

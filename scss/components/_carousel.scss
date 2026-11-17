@@ -1,0 +1,57 @@
+.carousel-inner {
+  height: 120vh;
+}
+
+.carousel-item {
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+#carouselExample {
+  .carousel-item img {
+    max-height: 650px;
+    object-fit: cover;
+  }
+}
+// scss/components/_carousel.scss
+.carousel {
+  width: 100%;
+  margin-bottom: 1.5rem; // Espacio controlado hacia las tarjetas
+
+  .carousel-inner {
+    width: 100%;
+    // En mobile le damos una altura acorde o dejamos que la imagen mande
+    max-height: 380px;
+
+    @media (min-width: 768px) {
+      max-height: 450px;
+    }
+
+    @media (min-width: 1024px) {
+      max-height: 550px;
+    }
+  }
+
+  .carousel-item {
+    height: 100%;
+
+    img {
+      width: 100%;
+      height: 280px; // Altura fija uniforme en mobile
+      object-fit: cover; // Evita que la foto se deforme o deje huecos
+      object-position: center;
+
+      @media (min-width: 768px) {
+        height: 450px;
+      }
+
+      @media (min-width: 1024px) {
+        height: 550px;
+      }
+    }
+  }
+}

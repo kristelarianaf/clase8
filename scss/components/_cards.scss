@@ -1,0 +1,59 @@
+// scss/components/_cards.scss
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+@use "../components/animation.scss" as *;
+
+.indexcard {
+  @include flex-custom(row, flex-start);
+
+  article {
+    @include card-box;
+  }
+}
+
+.cardindex {
+  @include flex-custom(column, space-around, 20px);
+
+  article {
+    @include card-box;
+  }
+
+  @media only screen and (min-width: 1024px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+.servicios-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem;
+  @include card-box;
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.cardindex article {
+  // Animación nativa de aparición al cargar la página
+  animation: entradaSuave 0.8s ease-out forwards;
+  
+  // Transition nativa para cuando el usuario pasa el cursor (microinteracción sutil)
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(123, 44, 191, 0.25);
+  }
+}
+// Detalle interactivo: un retardo sutil para la segunda tarjeta (efecto escalonado)
+.cardindex article:nth-child(2) {
+  animation-delay: 0.2s;
+}

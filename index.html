@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Animate.css desde CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+<header>
+  <nav class="navbar navbar-expand-lg mi-navbar" data-bs-theme="dark">
+    <div class="container-fluid">
+      <!-- Marca o título del sitio -->
+      <div class="navbar-brand">Trip and Art</div>
+      <!-- Botón hamburguesa -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Enlaces colapsables -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/proyectos.html">Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/servicios.html">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/sobremi.html">Sobre mi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/contactos.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<main class="main">
+  <!-- Sección de presentación -->
+  <section class="intro">
+    <h1>¿Qué hace Trip and Art?</h1>
+    <div class="indexcard">
+      <article> 
+        <p>Trip and Art es una página que recopila textos de poetas y escritores sobre cultura y viajes.</p>
+      </article>
+    </div>
+  </section>
+  <!-- Sección de autoras/poemas -->
+  <section class="poemas">
+    <div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./img/MARIZTA CINO ALVEAR (Ecuador, 1957).jpg" class="d-block w-100" alt="Maritza Cino Alvear">
+    </div>
+    <div class="carousel-item">
+      <img src="./img/alfonsina-storniinfoibae.jpg" class="d-block w-100" alt="Alfonsina Storni">
+    </div>
+    <div class="carousel-item">
+      <img src="./img/gabriel-mistral.jpg" class="d-block w-100" alt="Gabriela Mistral">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+    <div class="cardindex">
+      <article>
+        <h2>Maritza Cino (Ecuador)</h2>
+        <button type="button" class="btn btn-purple btn-sm mb-3" data-bs-toggle="modal" data-bs-target="#modalMaritza">
+          Conocer más sobre Maritza
+        </button>
+        <p>
+          mudanzas <br>
+          los libros fueron transformándose en polillas <br>
+          en cada mudanza fui perdiendo un poco de ellos <br>
+          sin pena ni nostalgia me convertí en mala madre <br>
+          los abandoné en cada casa <br>
+          los aboné en cada casa <br>
+          en cajones en cartones en repisas <br>
+          en el baño en la cocina <br>
+          en los rincones de mi cuarto <br>
+          debajo de la cama <br>
+          aglomerados en desorden: <br>
+          un libro consumado debe macerarse en el vacío de <br>
+          una casa <br>
+          me convertí en mala madre <br>
+          me alejé de sus cortezas y texturas <br>
+          de subrayados y de notas <br>
+          de los registros que se borran con el moho <br>
+          los dejé entre larvas y silencio <br>
+          entre mariposas moribundas
+        </p>
+      </article>
+      <article>
+        <h2>Alfonsina Storni (Argentina)</h2>
+          <!-- Botón disparador del modal -->
+        <button type="button" class="btn btn-purple btn-sm mb-3" data-bs-toggle="modal" data-bs-target="#modalAlfonsina">
+          Conocer más sobre Alfonsina
+        </button>
+        <p>
+          Voy a dormir<br>
+          Dientes de flores, cofia de rocío,<br>
+          manos de hierbas, tú, nodriza fina,<br>
+          tenme prestas las sábanas terrosas<br>
+          y el edredón de musgos escardados.<br>
+          Voy a dormir, nodriza mía, acuéstame.<br>
+          Ponme una lámpara a la cabecera;<br>
+          una constelación, la que te guste;<br>
+          todas son buenas, bájala un poquito.<br>
+          Déjame sola: oyes romper los brotes…<br>
+          te acuna un pie celeste desde arriba<br>
+          y un pájaro te traza unos compases <br>
+          para que olvides… Gracias… Ah, un encargo: <br>
+          si él llama nuevamente por teléfono <br>
+          le dices que no insista, que he salido.
+        </p>
+      </article>
+      <article>
+        <h2>Gabriela Mistral (Chile)</h2>
+          <!-- Botón disparador del modal -->
+        <button type="button" class="btn btn-purple btn-sm mb-3" data-bs-toggle="modal" data-bs-target="#modalMistral">
+          Conocer más sobre Gabriela
+        </button>
+        <p>
+          Piececitos <br>
+          Piececitos de niño,<br>
+          azulosos de frío,<br>
+          ¡cómo os ven y no os cubren,<br>
+          Dios mío!<br>
+          ¡Piececitos heridos<br>
+          por los guijarros todos,<br>
+          ultrajados de nieves<br>
+          y lodos!<br>
+          El hombre ciego ignora<br>
+          que por donde pasáis,<br>
+          una flor de luz viva<br>
+          dejáis;<br>
+          que allí donde ponéis<br>
+          la plantita sangrante,<br>
+          el nardo nace más<br>
+          fragante.<br>
+          Sed, puesto que marcháis<br>
+          por los caminos rectos,<br>
+          heroicos como sois<br>
+          perfectos.<br>
+          Piececitos de niño,<br>
+          dos joyitas sufrientes,<br>
+          ¡cómo pasan sin veros<br>
+          las gentes!
+        </p>
+      </article>
+    </div>
+  </section>
+<!-- Un modal por autora, al final del main -->
+<div class="modal fade" id="modalMaritza" tabindex="-1" aria-labelledby="modalMaritzaLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title fs-5" id="modalMaritzaLabel">Maritza Cino</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <p>Poeta y ensayista ecuatoriana. Su obra explora la memoria, la migración y la vida cotidiana.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal de Alfonsina Storni -->
+<div class="modal fade" id="modalAlfonsina" tabindex="-1" aria-labelledby="modalAlfonsinaLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-dark">
+      <div class="modal-header">
+        <h2 class="modal-title fs-5" id="modalAlfonsinaLabel">Alfonsina Storni (1892 - 1938)</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <p>
+          Poeta y escritora argentina vinculada al modernismo y al vanguardismo. Su obra aborda temas como la lucha femenina, la soledad urbana, el amor y la muerte con una voz profunda e intimista.
+        </p>
+        <p class="mb-0">
+          <em>"Voy a dormir"</em> fue su último poema, enviado al diario La Nación antes de su fallecimiento en Mar del Plata.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal de Gabriela Mistral -->
+<div class="modal fade" id="modalMistral" tabindex="-1" aria-labelledby="modalMistralLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-dark">
+      <div class="modal-header">
+        <h2 class="modal-title fs-5" id="modalMistralLabel">Gabriela Mistral (1889 - 1957)</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <p>
+          Seudónimo de Lucila Godoy Alcayaga, destacada poeta, diplomática y pedagoga chilena. En 1945 se convirtió en la primera persona latinoamericana en recibir el <strong>Premio Nobel de Literatura</strong>.
+        </p>
+        <p class="mb-0">
+          Su lírica aborda con profunda sensibilidad la maternidad, la infancia, la educación popular, el amor y la identidad latinoamericana.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>   
+</main>
+<footer class="footer">
+    <p>© 2026 Trip and Art</p>
+    <ul>
+        <li>
+            <a href="https://instagram.com/tripandart">
+        Instagram </a>
+        </li>
+    </ul>
+</footer>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

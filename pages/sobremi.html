@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOBRE MI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Animate.css desde CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+  <header class="navbar navbar-expand-lg mi-navbar" data-bs-theme="dark">
+    <nav class="container-fluid">
+        <div class="navbar-brand">Trip and Art</div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+            <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="../pages/proyectos.html">Proyectos</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="../pages/servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="../pages/contactos.html">Contacto</a>
+            </li>
+        </ul>
+        </div>
+      </nav>
+  </header>
+  <main class="main">
+        <Section>
+            <h1>¿Quiénes somos?</h1>
+            <div class="indexcard">
+                <article> 
+                    <p>Somos un duo de escritores y periodistas que luchamos por encontrar voces nuevas en Latinoamérica para que sean leídas por todo el mundo.
+                    </p>
+                </article>
+            </div>
+       </Section>
+  <section>
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../img/kristelfreire.jpg" class="d-block w-100" alt="Kristel Freire">
+        </div>
+        <div class="carousel-item">
+          <img src="../img/Ramiro Suero.jpeg" class="d-block w-100" alt="Ramiro Suero">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+        <div class="cardindex">
+            <article>
+            <h2>Kristel Freire</h2>
+                  <!-- Botón modal Kristel -->
+            <button type="button" class="btn btn-purple btn-sm mt-2" data-bs-toggle="modal" data-bs-target="#modalPoemaKristel">
+              Leer poema de Kristel
+            </button>
+                <p>Es una artista y periodista ecuatoriana especializada en Derechos Humanos y en Post Producción Audiovisual, actualmente cursa la maestría de Lenguajes Artísticos Combinados en la Universidad Nacional de las Artes en Buenos Aires. Su poemario La benignidad de las penas, cómo volver infame a un criminal ganó el X Concurso de Poesía Joven Ileana Espinel Cedeño. Fue traductora literaria para PM Press de Nueva York y coordinadora del Espacio Cultural Estudio N en Guayaquil. Ha dirigido obras de teatro y performances. Trabajó como guionista en Bogotá y como periodista en Argentina. Es parte del colectivo de artistas feministas GritaLaMar, que produce obras con temática de violencia de género.
+
+                </p>
+            </article>
+            <article>
+                <h2>Ramiro Suero</h2>
+              <button type="button" class="btn btn-purple btn-sm mt-2" data-bs-toggle="modal" data-bs-target="#modalPoemaRamiro">
+  Leer poema de Ramiro
+</button>
+                    <p>Nacido en Buenos Aires, Argentina. Fue finalista del concurso de Poesía Ruinas Circulares. Autor de los libros de poemas Sinfonía para verdugos de buen corazón (Alción, 2023) y Los niños perdidos (Alción, 2024). Estudió los primeros años de psicología en la UBA, carrera que abandonó para dedicarse a escribir y a dar talleres de escritura creativa. Alumno de Pablo Ramos, Ignacio Apolo, Diego Paszkowski y Laura Yasán. 
+                    </p>
+            </article>
+        </div>
+  </section>
+    <!-- Modal Poema: Kristel Freire -->
+<div class="modal fade" id="modalPoemaKristel" tabindex="-1" aria-labelledby="modalPoemaKristelLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title fs-5" id="modalPoemaKristelLabel">Poema — Kristel Freire</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <p class="fst-italic">
+          De "La benignidad de las penas, cómo volver infame a un criminal":<br><br>
+          Escribo para desarmar el eco,<br>
+          las horas que se doblan en las esquinas,<br>
+          la memoria que insiste como un pulso ajeno.<br>
+          Nombrar la herida no es cerrarla,<br>
+          es encenderle una vela en medio del cuarto.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal Poema: Ramiro Suero -->
+<div class="modal fade" id="modalPoemaRamiro" tabindex="-1" aria-labelledby="modalPoemaRamiroLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title fs-5" id="modalPoemaRamiroLabel">Poema — Ramiro Suero</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <p class="fst-italic">
+          De "Sinfonía para verdugos de buen corazón":<br><br>
+          Hay una música quieta en los andenes rotos,<br>
+          un rumor de infancia que no sabe volver.<br>
+          Juntamos piedras como quien guarda nombres<br>
+          para no perder el peso del camino<br>
+          cuando la noche borre las veredas.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+</main>
+    <footer class="footer">
+        <p>© 2026 Trip and Art</p>
+        <ul>
+            <li>
+                <a href="https://instagram.com/tripandart">
+            Instagram </a>
+            </li>
+        </ul>
+    </footer>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

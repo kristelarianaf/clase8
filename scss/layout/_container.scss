@@ -1,0 +1,31 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 1fr auto;
+  gap: 10px;
+  width: 80%;
+  grid-template-areas: 
+    "navbar"
+    "main"
+    "footer";
+}
+main, .container {
+  min-height: auto; // o min-height: 100vh si querés que ocupe al menos la pantalla completa
+  height: auto;     // permite que crezca según el contenido
+  margin-bottom: 3rem; // da aire antes del footer en mobile
+}
+html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; // Asegura que ocupe al menos el alto visible
+  margin: 0;
+}
+// El contenedor principal empuja al footer
+main, .main-content {
+  flex: 1 0 auto; // Crece según el contenido y empuja el footer hacia abajo
+  width: 100%;
+  padding-bottom: 2rem; // Da un respiro antes de tocar el footer en mobile
+}
